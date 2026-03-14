@@ -1,0 +1,138 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #00008b; /* Темно-синій */
+    color: white;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    padding: 15px 5%;
+    justify-content: space-between;
+    position: fixed;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(10px);
+    width: 100%;
+    z-index: 1000;
+}
+
+.loga {
+    color: #6699ff;
+    font-weight: 700;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
+nav a {
+    color: #6699ff;
+    text-decoration: none;
+    transition: 0.3s;
+    margin-left: 20px;
+    font-size: 14px;
+}
+
+nav a:hover {
+    color: white;
+    text-shadow: 0 0 10px #6699ff;
+}
+
+.hero {
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,139,0.6), rgba(0,0,139,0.6)), url('https://images.unsplash.com/photo-1550684848-fac1c5b4e853?q=80&w=2070') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-content {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid #6699ff;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.btn {
+    transition: 0.4s;
+    text-decoration: none;
+    color: white;
+    background-color: #0000ff;
+    border: 2px solid #6699ff;
+    border-radius: 50px;
+    padding: 12px 30px;
+    margin-top: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+
+.btn:hover {
+    color: black;
+    background-color: white;
+    transform: scale(1.05);
+}
+
+section {
+    padding: 100px 5%;
+    text-align: center;
+}
+
+.about {
+    background-color: #0000a0;
+}
+
+.powers {
+    background-color: #00008b;
+}
+
+.carts {
+    display: flex;
+    justify-content: center;
+    margin-top: 40px;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.cart {
+    background-color: #6699ff;
+    padding: 30px;
+    border-radius: 20px;
+    width: 280px;
+    min-height: 200px;
+    transition: 0.3s;
+    color: #000;
+}
+
+.cart h3 {
+    margin-bottom: 15px;
+    color: #00008b;
+    font-size: 1.2rem;
+}
+
+.cart:hover {
+    box-shadow: 0 0 30px rgba(102, 153, 255, 0.6);
+    transform: translateY(-10px);
+    background-color: #8db3ff;
+}
+
+footer {
+    text-align: center;
+    background-color: #000;
+    color: #6699ff;
+    padding: 40px;
+    font-size: 12px;
+}
